@@ -12,3 +12,4 @@
 # entidade = co.interfaceEntity(name="ULA")
 # arquitetura = co.aplicationArchitecture(name="ULA")
 # print(entidade,arquitetura)
+
