@@ -2,9 +2,9 @@
 
 import booleanGates as bg
 
-name = "OrTest"
+name = "BooleanGates"
 
-Orgate4Bits = bg.orGate(name, 2, 1, 4, 5, "STD_LOGIC_VECTOR")
+BooleanGate = bg.andGate(name, 2, 1, 4, 5, "STD_LOGIC_VECTOR")
 
 with open(f"{name}.vhd","w") as file:
-    file.write(Orgate4Bits)
+    file.write(BooleanGate)
