@@ -1,15 +1,10 @@
 #https://wp.cbpf.br/escola-2023/wp-content/uploads/wpcfto_files/af2f7440836735403c222853d8bbbf99EscolaCBPF-2021_Parte-3_VHDL.pdf
 
-# import rowsEntity as rE
+import booleanGates as bg
 
-# linhasInputs = rE.rowInput()
-# linhasOutputs = rE.rowOutput()
-# print(linhasInputs)
-# print(linhasOutputs)
+name = "OrTest"
 
-# import component as co
+Orgate4Bits = bg.orGate(name, 2, 1, 4, 5, "STD_LOGIC_VECTOR")
 
-# entidade = co.interfaceEntity(name="ULA")
-# arquitetura = co.aplicationArchitecture(name="ULA")
-# print(entidade,arquitetura)
-
+with open(f"{name}.vhd","w") as file:
+    file.write(Orgate4Bits)
